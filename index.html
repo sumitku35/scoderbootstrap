@@ -4,9 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>my fisrt bootstrap website </title>
 </head>
 
 <body>
@@ -18,75 +16,38 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                 
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="/about.html">About</a>
+                     <a class="nav-link "  href="/about.html">About</a>
+                     
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="/contact.html">Contact us</a>
+                        <a class="nav-link " href="/contact.html">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="/support.html">Support</a>
+                        <a class="nav-link " href="/support.html">Support</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
-                    <button class="btn btn-outline-danger mx-2" data-bs-toggle="modal" data-bs-target="#loginModal">login</button>
-                    <button class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#signupModal">signup</button>
+                    <button class="btn btn-outline-danger mx-2" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">login</button>
+                    <button class="btn btn-outline-danger" data-bs-toggle="modal"
+                        data-bs-target="#signupModal">signup</button>
                 </form>
+            
             </div>
         </div>
     </nav>
 
-
-  
-  <!-- login Modal -->
-  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="loginModalLabel">Modal title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <!--signup  Modal -->
-  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="signupModalLabel">Modal title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="false">
+<!--slide share photo -->
+<div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
@@ -94,7 +55,11 @@
                 aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                 aria-label="Slide 3"></button>
+
+
+
         </div>
+        <!--slide share photo 1 -->
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="img4.jpg" class="d-block w-100" alt="..." width="500" height="400">>
@@ -103,13 +68,15 @@
                     <p>Some representative placeholder content for the first slide.</p>
                 </div>
             </div>
+            <!--slide share photo 2 -->
             <div class="carousel-item">
                 <img src="img2.jpg" class="d-block w-100" alt="..." width="500" height="400">>
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Welcome to Scoder </h5>
-                    <p>Some representative placeholder content for the second slide.</p>
+                    <p>Some technical .</p>
                 </div>
             </div>
+            <!--slide share photo 3 -->
             <div class="carousel-item">
                 <img src="img1.jpg" class="d-block w-100" alt="..." width="500" height="400">>
                 <div class="carousel-caption d-none d-md-block">
@@ -118,16 +85,16 @@
                 </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev">
+         
+         
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next">
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
-        </button>
+          </button>
     </div>
     <div class="container my-4  ">
 
@@ -137,15 +104,15 @@
                 <div
                     class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div class="col p-4 d-flex flex-column position-static">
-                        <strong class="d-inline-block mb-2 text-primary">World</strong>
-                        <h3 class="mb-0">Featured post</h3>
-                        <div class="mb-1 text-muted">Nov 12</div>
-                        <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
-                            lead-in to additional content.</p>
-                        <a href="#" class="stretched-link">Continue reading</a>
+                        <strong class="d-inline-block mb-2 text-primary">Education</strong>
+                        <h3 class="mb-0">NASSCOM</h3>
+                        <div class="mb-1 text-muted">june 10</div>
+                        <p class="card-text mb-auto"> Computer Science & Engineering (Cyber Security),congratulates the students to successfully complete the NASSCOM certification.
+                          </p>
+                        <a href="https://www.facebook.com/orientalgroupofinstitutes/photos/a.733935910010317/7361853857218456/" class="stretched-link">Continue reading</a>
                     </div>
                     <div class="col-auto d-none d-lg-block">
-                        <img class="bd-placeholder-img" width="200" height="250" src="img1.jpg" alt="">
+                        <img class="bd-placeholder-img" width="200" height="250" src="oct1.jpg" alt="">
 
                     </div>
                 </div>
@@ -154,15 +121,15 @@
                 <div
                     class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div class="col p-4 d-flex flex-column position-static">
-                        <strong class="d-inline-block mb-2 text-success">Design</strong>
-                        <h3 class="mb-0">Post title</h3>
-                        <div class="mb-1 text-muted">Nov 11</div>
-                        <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to
-                            additional content.</p>
-                        <a href="#" class="stretched-link">Continue reading</a>
+                        <strong class="d-inline-block mb-2 text-success">Education</strong>
+                        <h3 class="mb-0">State Cyber Cell</h3>
+                        <div class="mb-1 text-muted">May 27</div>
+                        <p class="mb-auto">Department of Computer Science & Engineering(Cyber Security) organized an industrial visit to State Cyber Police Headquarters (State Cyber Cell) , Bhopal on 13th May 2022. 
+                            The objective of this visit was to make students aware of the principles and functioning of Cyber Cell and to correlate theoretical knowledge with real time practice.</p>
+                        <a href="https://www.facebook.com/orientalgroupofinstitutes/photos/a.733935910010317/7291397594264083/" class="stretched-link">Continue reading</a>
                     </div>
                     <div class="col-auto d-none d-lg-block">
-                        <img class="bd-placeholder-img" width="200" height="250" src="img1.jpg" alt="">
+                        <img class="bd-placeholder-img" width="200" height="350" src="oct2.jpg" alt="">
 
 
                     </div>
@@ -174,15 +141,15 @@
                 <div
                     class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div class="col p-4 d-flex flex-column position-static">
-                        <strong class="d-inline-block mb-2 text-primary">World</strong>
-                        <h3 class="mb-0">Featured post</h3>
-                        <div class="mb-1 text-muted">Nov 12</div>
-                        <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
-                            lead-in to additional content.</p>
-                        <a href="#" class="stretched-link">Continue reading</a>
+                        <strong class="d-inline-block mb-2 text-primary">Education</strong>
+                        <h3 class="mb-0">Cyber Awareness Camp</h3>
+                        <div class="mb-1 text-muted">May 14</div>
+                        <p class="card-text mb-auto">Department of Computer Science & Engineering (Cyber Security) and Cyber Club  organized a "Cyber Awareness Camp" at Semari Khurd Village, Gram Panchayat - Bagroda under Unnat Bhart Abhiyan on 26th and 27th April 2022.
+                            Villagers were collected at the school premises where the students informed them about Social Media Crime, Bank Frauds etc.</p>
+                        <a href="https://www.facebook.com/orientalgroupofinstitutes/photos/a.733935910010317/7226985657371944/" class="stretched-link">Continue reading</a>
                     </div>
                     <div class="col-auto d-none d-lg-block">
-                        <img class="bd-placeholder-img" width="200" height="250" src="img1.jpg" alt="">
+                        <img class="bd-placeholder-img" width="200" height="350" src="oct3.jpg" alt="">
 
                     </div>
                 </div>
@@ -200,37 +167,30 @@
                     </div>
                     <div class="col-auto d-none d-lg-block">
 
-                        <img class="bd-placeholder-img" width="200" height="250" src="img1.jpg" alt="">
+                        <img class="bd-placeholder-img" width="200" height="250" src="img4.jpg" alt="">
                     </div>
                 </div>
             </div>
         </div>
         <footer class="blog-footer">
-            <p>Blog template built for <a href="https://getbootstrap.com/">Scoder</a> by <a href="...">@avi</a>.</p>
+            <p>© Copyright 2022-2023 All rights reserved. Developed by Scoder.<a href="https://www.facebook.com/profile.php?id=100020456317780">Scoder</a> by <a href="https://www.facebook.com/profile.php?id=100020456317780">@avi</a>.</p>
             <p>
                 <a href="#">Back to top</a>
             </p>
         </footer>
     </div>
+   
 
 
 
-
-
-
-
-
-
-
-
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
         integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
-        </script>
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
         integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous">
-        </script>
-
+    </script>
 </body>
 
 </html>
